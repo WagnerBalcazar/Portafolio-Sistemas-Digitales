@@ -1,4 +1,4 @@
-// ================== CONFIGURACIÓN ==================
+
 const int LED_PINS[] = {2, 3, 4, 5, 6, 7};
 const int NUM_LEDS = 6;
 
@@ -15,7 +15,7 @@ const int intervalo = 120;
 int indice = 0;
 int direccion = 1;
 
-// ================== SETUP ==================
+
 void setup() {
 
   for (int i = 0; i < NUM_LEDS; i++) {
@@ -28,7 +28,6 @@ void setup() {
   randomSeed(analogRead(0));
 }
 
-// ================== LOOP ==================
 void loop() {
 
   leerBoton();
@@ -62,7 +61,6 @@ void loop() {
   }
 }
 
-// ================== BOTÓN ==================
 void leerBoton() {
 
   bool estadoBoton = digitalRead(BOTON_PIN);
@@ -74,7 +72,6 @@ void leerBoton() {
       patronActual = 0;
     }
 
-    // Reiniciar estados al cambiar patrón
     indice = 0;
     direccion = 1;
   }
