@@ -21,6 +21,7 @@ Este repositorio reúne las prácticas y proyectos desarrollados durante la asig
 
 * Operaciones Bitwise
 * Juego de Luces Interactivo
+* Temporizador 555-74HC74
 
 ---
 
